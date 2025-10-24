@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<!-- saved from url=(0058)https://resources.beecrowd.com/repository/UOJ_1015_en.html -->
+<html data-uw-w-loader=""><script async="" src="./clarity.js.download"></script><script async="" src="./glwcltowmx"></script><script type="text/javascript" async="" src="./widget.js.download"></script><script type="text/javascript" async="" src="./saved_resource(2)"></script><script async="" src="./gtm.js.download"></script><script async="" src="./saved_resource(3)"></script><script src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/libs/extend-native-history-api.js"></script><script src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/libs/requests.js"></script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script>(function(w,i,g){w[g]=w[g]||[];if(typeof w[g].push=='function')w[g].push(i)})
+(window,'GTM-5TJ9S2X','google_tags_first_party');</script><script>(function(w,d,s,l){w[l]=w[l]||[];(function(){w[l].push(arguments);})('set', 'developer_id.dY2E1Nz', true);
+		var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s);j.async=true;j.src='/4qul/';
+		f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer');</script>
+        <title>bee 1015 - Distance Between Two Points</title>
+        
+        <meta content="beecrowd" name="author">
+        <meta content="beecrowd - Problem 1015 - Distance Between Two Points " name="description">
+
+        <link href="./css" rel="stylesheet" type="text/css">
+        <link href="./default(1).css" rel="stylesheet" type="text/css">
+
+        <script>
+            window.onload = function () {
+                window.parent.postMessage(
+                    {
+                        action: "resize",
+                        id: "description-html",
+                        height: document.body.scrollHeight + 10,
+                    },
+                    "*",
+                );
+            };
+        </script>
+
+        <!-- Google Tag Manager -->
+        <script>
+            (function (w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != "dataLayer" ? "&l=" + l : "";
+                j.async = true;
+                j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+                f.parentNode.insertBefore(j, f);
+            })(window, document, "script", "dataLayer", "GTM-5TJ9S2X");
+        </script>
+        <!-- End Google Tag Manager -->
+    <link href="./widget_lazy.css" type="text/css" rel="stylesheet"><script bis_use="true" type="text/javascript" charset="utf-8" data-bis-config="[&quot;facebook.com/&quot;,&quot;twitter.com/&quot;,&quot;youtube-nocookie.com/embed/&quot;,&quot;//vk.com/&quot;,&quot;//www.vk.com/&quot;,&quot;linkedin.com/&quot;,&quot;//www.linkedin.com/&quot;,&quot;//instagram.com/&quot;,&quot;//www.instagram.com/&quot;,&quot;//www.google.com/recaptcha/api2/&quot;,&quot;//hangouts.google.com/webchat/&quot;,&quot;//www.google.com/calendar/&quot;,&quot;//www.google.com/maps/embed&quot;,&quot;spotify.com/&quot;,&quot;soundcloud.com/&quot;,&quot;//player.vimeo.com/&quot;,&quot;//disqus.com/&quot;,&quot;//tgwidget.com/&quot;,&quot;//js.driftt.com/&quot;,&quot;friends2follow.com&quot;,&quot;/widget&quot;,&quot;login&quot;,&quot;//video.bigmir.net/&quot;,&quot;blogger.com&quot;,&quot;//smartlock.google.com/&quot;,&quot;//keep.google.com/&quot;,&quot;/web.tolstoycomments.com/&quot;,&quot;moz-extension://&quot;,&quot;chrome-extension://&quot;,&quot;/auth/&quot;,&quot;//analytics.google.com/&quot;,&quot;adclarity.com&quot;,&quot;paddle.com/checkout&quot;,&quot;hcaptcha.com&quot;,&quot;recaptcha.net&quot;,&quot;2captcha.com&quot;,&quot;accounts.google.com&quot;,&quot;www.google.com/shopping/customerreviews&quot;,&quot;buy.tinypass.com&quot;,&quot;gstatic.com&quot;,&quot;secureir.ebaystatic.com&quot;,&quot;docs.google.com&quot;,&quot;contacts.google.com&quot;,&quot;github.com&quot;,&quot;mail.google.com&quot;,&quot;chat.google.com&quot;,&quot;audio.xpleer.com&quot;,&quot;keepa.com&quot;,&quot;static.xx.fbcdn.net&quot;,&quot;sas.selleramp.com&quot;,&quot;1plus1.video&quot;,&quot;console.googletagservices.com&quot;,&quot;//lnkd.demdex.net/&quot;,&quot;//radar.cedexis.com/&quot;,&quot;//li.protechts.net/&quot;,&quot;challenges.cloudflare.com/&quot;,&quot;ogs.google.com&quot;]" src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/executors/traffic.js"></script><link href="./widget_base.css" type="text/css" rel="stylesheet"></head>
+    <body __processed_f779676e-945c-415a-bbd9-0ecd1bfe4503__="true" bis_status="ok" bis_frame_id="82" bis_body_id="fr_6tdyi7o8970kk9i0i70g1f" bis_depth="0" bis_chainid="1" bis_size="{&quot;x&quot;:0,&quot;y&quot;:0,&quot;w&quot;:807,&quot;h&quot;:629,&quot;abs_x&quot;:70,&quot;abs_y&quot;:200}">
+        <div class="uwy userway_p3 uts" data-uw-feature-ignore="true" data-uw-rm-ignore="true" title="Accessibility Menu" style="background-color: transparent !important; overflow: initial !important;" bis_size="{&quot;x&quot;:10,&quot;y&quot;:10,&quot;w&quot;:0,&quot;h&quot;:0,&quot;abs_x&quot;:80,&quot;abs_y&quot;:210}"><div class="userway_buttons_wrapper" bis_size="{&quot;x&quot;:754,&quot;y&quot;:645,&quot;w&quot;:32,&quot;h&quot;:32,&quot;abs_x&quot;:824,&quot;abs_y&quot;:845}"><div class="ulsti hidden userway_dark" id="userwayLstIcon" aria-label="Translations Menu" role="button" tabindex="0" aria-haspopup="dialog" data-uw-s19-ignore="" title="Translations Menu" style="background: rgb(102, 36, 131) !important;" bis_size="{&quot;x&quot;:0,&quot;y&quot;:0,&quot;w&quot;:0,&quot;h&quot;:0,&quot;abs_x&quot;:70,&quot;abs_y&quot;:200}"><span class="uiiw" bis_size="{&quot;x&quot;:0,&quot;y&quot;:0,&quot;w&quot;:0,&quot;h&quot;:0,&quot;abs_x&quot;:70,&quot;abs_y&quot;:200}"></span><div class="ups" bis_size="{&quot;x&quot;:0,&quot;y&quot;:0,&quot;w&quot;:0,&quot;h&quot;:0,&quot;abs_x&quot;:70,&quot;abs_y&quot;:200}"><img width="43" height="43" data-uw-rm-ignore="" class="si_w" aria-hidden="true" alt="Spinner: White decorative" src="./spin_wh.svg" bis_size="{&quot;x&quot;:0,&quot;y&quot;:0,&quot;w&quot;:0,&quot;h&quot;:0,&quot;abs_x&quot;:70,&quot;abs_y&quot;:200}"></div><span class="usr lst-spacer" bis_size="{&quot;x&quot;:0,&quot;y&quot;:0,&quot;w&quot;:0,&quot;h&quot;:0,&quot;abs_x&quot;:70,&quot;abs_y&quot;:200}"></span><img class="userway_check_on" data-uw-rm-ignore="" data-uw-ignore-s25="true" width="18" height="20" alt="Accessibility menu is on" src="./check_on.svg" bis_size="{&quot;x&quot;:0,&quot;y&quot;:0,&quot;w&quot;:0,&quot;h&quot;:0,&quot;abs_x&quot;:70,&quot;abs_y&quot;:200}"></div><div class="uai userway_dark" id="userwayAccessibilityIcon" aria-label="Accessibility Menu" role="button" tabindex="0" aria-haspopup="dialog" title="Accessibility Menu" style="background: rgb(102, 36, 131) !important;" bis_size="{&quot;x&quot;:754,&quot;y&quot;:645,&quot;w&quot;:32,&quot;h&quot;:32,&quot;abs_x&quot;:824,&quot;abs_y&quot;:845}"><span class="uiiw" bis_size="{&quot;x&quot;:754,&quot;y&quot;:645,&quot;w&quot;:32,&quot;h&quot;:32,&quot;abs_x&quot;:824,&quot;abs_y&quot;:845}"><img data-uw-rm-ignore="" class="ui_w" role="presentation" alt="" src="./body_wh.svg" bis_size="{&quot;x&quot;:754,&quot;y&quot;:645,&quot;w&quot;:32,&quot;h&quot;:32,&quot;abs_x&quot;:824,&quot;abs_y&quot;:845}"></span><div class="ups" bis_size="{&quot;x&quot;:0,&quot;y&quot;:0,&quot;w&quot;:0,&quot;h&quot;:0,&quot;abs_x&quot;:70,&quot;abs_y&quot;:200}"><img width="43" height="43" data-uw-rm-ignore="" class="si_w" aria-hidden="true" alt="Spinner: White decorative" src="./spin_wh.svg" bis_size="{&quot;x&quot;:0,&quot;y&quot;:0,&quot;w&quot;:0,&quot;h&quot;:0,&quot;abs_x&quot;:70,&quot;abs_y&quot;:200}"></div><span class="usr" bis_size="{&quot;x&quot;:744,&quot;y&quot;:635,&quot;w&quot;:52,&quot;h&quot;:52,&quot;abs_x&quot;:814,&quot;abs_y&quot;:835}"></span><img class="userway_check_on" data-uw-rm-ignore="" data-uw-ignore-s25="true" width="18" height="20" alt="Accessibility menu is on" src="./check_on.svg" bis_size="{&quot;x&quot;:772,&quot;y&quot;:638,&quot;w&quot;:18,&quot;h&quot;:20,&quot;abs_x&quot;:842,&quot;abs_y&quot;:838}"></div><div class="uwaw-dictionary-tooltip" bis_size="{&quot;x&quot;:486,&quot;y&quot;:645,&quot;w&quot;:300,&quot;h&quot;:0,&quot;abs_x&quot;:556,&quot;abs_y&quot;:845}"></div></div><iframe class="uwif userway_p3" data-uw-ignore-translate="true" name="userway" title="UserWay Accessibility Menu" allow="clipboard-write" style="max-width: 100vw !important; visibility: visible !important; opacity: 1 !important; color-scheme: light !important;" bis_size="{&quot;x&quot;:0,&quot;y&quot;:0,&quot;w&quot;:0,&quot;h&quot;:0,&quot;abs_x&quot;:70,&quot;abs_y&quot;:200}" bis_id="fr_t3o8iweeda8i72s1nu0iws" bis_depth="1" bis_chainid="1" src="./saved_resource(6).html"></iframe></div><div class="uw-s10-bottom-ruler-guide" bis_size="{&quot;x&quot;:0,&quot;y&quot;:0,&quot;w&quot;:0,&quot;h&quot;:0,&quot;abs_x&quot;:70,&quot;abs_y&quot;:200}"></div><div class="uw-s10-right-ruler-guide" bis_size="{&quot;x&quot;:0,&quot;y&quot;:0,&quot;w&quot;:0,&quot;h&quot;:0,&quot;abs_x&quot;:70,&quot;abs_y&quot;:200}"></div><div class="uw-s10-left-ruler-guide" bis_size="{&quot;x&quot;:0,&quot;y&quot;:0,&quot;w&quot;:0,&quot;h&quot;:0,&quot;abs_x&quot;:70,&quot;abs_y&quot;:200}"></div><div class="uw-s10-reading-guide" bis_size="{&quot;x&quot;:0,&quot;y&quot;:0,&quot;w&quot;:0,&quot;h&quot;:0,&quot;abs_x&quot;:70,&quot;abs_y&quot;:200}"><div class="uw-s10-reading-guide__arrow" bis_size="{&quot;x&quot;:0,&quot;y&quot;:0,&quot;w&quot;:0,&quot;h&quot;:0,&quot;abs_x&quot;:70,&quot;abs_y&quot;:200}"></div></div><div class="uw-s12-tooltip" aria-hidden="true" bis_size="{&quot;x&quot;:0,&quot;y&quot;:0,&quot;w&quot;:0,&quot;h&quot;:0,&quot;abs_x&quot;:70,&quot;abs_y&quot;:200}"></div><div class="header" bis_size="{&quot;x&quot;:10,&quot;y&quot;:10,&quot;w&quot;:787,&quot;h&quot;:112,&quot;abs_x&quot;:80,&quot;abs_y&quot;:210}">
+            <span bis_size="{&quot;x&quot;:358,&quot;y&quot;:11,&quot;w&quot;:89,&quot;h&quot;:13,&quot;abs_x&quot;:428,&quot;abs_y&quot;:211}">beecrowd | 1015</span>
+            <h1 bis_size="{&quot;x&quot;:10,&quot;y&quot;:30,&quot;w&quot;:787,&quot;h&quot;:32,&quot;abs_x&quot;:80,&quot;abs_y&quot;:230}">Distance Between Two Points</h1>
+            <div bis_size="{&quot;x&quot;:10,&quot;y&quot;:68,&quot;w&quot;:787,&quot;h&quot;:13,&quot;abs_x&quot;:80,&quot;abs_y&quot;:268}">
+                <p bis_size="{&quot;x&quot;:10,&quot;y&quot;:68,&quot;w&quot;:787,&quot;h&quot;:13,&quot;abs_x&quot;:80,&quot;abs_y&quot;:268}">Adapted by Neilor Tonin, URI <img alt="" src="./br.gif" style="width: 16px; height: 11px" bis_size="{&quot;x&quot;:458,&quot;y&quot;:68,&quot;w&quot;:16,&quot;h&quot;:11,&quot;abs_x&quot;:528,&quot;abs_y&quot;:268}"> Brazil</p>
+            </div>
+            <strong bis_size="{&quot;x&quot;:364,&quot;y&quot;:86,&quot;w&quot;:78,&quot;h&quot;:15,&quot;abs_x&quot;:434,&quot;abs_y&quot;:286}">Timelimit: 1</strong>
+        </div>
+
+        <div class="problem" bis_size="{&quot;x&quot;:10,&quot;y&quot;:142,&quot;w&quot;:787,&quot;h&quot;:461,&quot;abs_x&quot;:80,&quot;abs_y&quot;:342}">
+            <div class="description" bis_size="{&quot;x&quot;:10,&quot;y&quot;:142,&quot;w&quot;:787,&quot;h&quot;:78,&quot;abs_x&quot;:80,&quot;abs_y&quot;:342}">
+                <p bis_size="{&quot;x&quot;:10,&quot;y&quot;:142,&quot;w&quot;:787,&quot;h&quot;:40,&quot;abs_x&quot;:80,&quot;abs_y&quot;:342}">Read the four values corresponding to the x and y axes of two points in the plane, p1 (x1, y1) and p2 (x2, y2) and calculate the distance between them, showing four decimal places, according to the formula:</p>
+                <p bis_size="{&quot;x&quot;:10,&quot;y&quot;:192,&quot;w&quot;:787,&quot;h&quot;:28,&quot;abs_x&quot;:80,&quot;abs_y&quot;:392}">Distance = <img alt="" src="./UOJ_1015.png" style="width: 181px; height: 24px" bis_size="{&quot;x&quot;:79,&quot;y&quot;:192,&quot;w&quot;:181,&quot;h&quot;:24,&quot;abs_x&quot;:149,&quot;abs_y&quot;:392}"></p>
+            </div>
+
+            <h2 bis_size="{&quot;x&quot;:10,&quot;y&quot;:241,&quot;w&quot;:787,&quot;h&quot;:20,&quot;abs_x&quot;:80,&quot;abs_y&quot;:441}">Input</h2>
+
+            <div class="input" bis_size="{&quot;x&quot;:10,&quot;y&quot;:271,&quot;w&quot;:787,&quot;h&quot;:40,&quot;abs_x&quot;:80,&quot;abs_y&quot;:471}">
+                <p bis_size="{&quot;x&quot;:10,&quot;y&quot;:271,&quot;w&quot;:787,&quot;h&quot;:40,&quot;abs_x&quot;:80,&quot;abs_y&quot;:471}">
+                    The input file contains two lines of data. The first one contains two double values:&nbsp;<em bis_size="{&quot;x&quot;:543,&quot;y&quot;:273,&quot;w&quot;:35,&quot;h&quot;:15,&quot;abs_x&quot;:613,&quot;abs_y&quot;:473}"><strong bis_size="{&quot;x&quot;:543,&quot;y&quot;:273,&quot;w&quot;:35,&quot;h&quot;:15,&quot;abs_x&quot;:613,&quot;abs_y&quot;:473}">x1 y1</strong></em> and the second one also contains two double values with one digit after the decimal point: <em bis_size="{&quot;x&quot;:372,&quot;y&quot;:293,&quot;w&quot;:34,&quot;h&quot;:15,&quot;abs_x&quot;:442,&quot;abs_y&quot;:493}"><strong bis_size="{&quot;x&quot;:372,&quot;y&quot;:293,&quot;w&quot;:34,&quot;h&quot;:15,&quot;abs_x&quot;:442,&quot;abs_y&quot;:493}">x2 y2</strong></em>.
+                </p>
+            </div>
+
+            <h2 bis_size="{&quot;x&quot;:10,&quot;y&quot;:331,&quot;w&quot;:787,&quot;h&quot;:20,&quot;abs_x&quot;:80,&quot;abs_y&quot;:531}">Output</h2>
+
+            <div class="output" bis_size="{&quot;x&quot;:10,&quot;y&quot;:361,&quot;w&quot;:787,&quot;h&quot;:20,&quot;abs_x&quot;:80,&quot;abs_y&quot;:561}">
+                <p bis_size="{&quot;x&quot;:10,&quot;y&quot;:361,&quot;w&quot;:787,&quot;h&quot;:20,&quot;abs_x&quot;:80,&quot;abs_y&quot;:561}">Calculate and print the distance value using the provided formula, with 4 decimal places.</p>
+            </div>
+
+            <div class="both" bis_size="{&quot;x&quot;:10,&quot;y&quot;:391,&quot;w&quot;:787,&quot;h&quot;:0,&quot;abs_x&quot;:80,&quot;abs_y&quot;:591}"></div>
+
+            <table bis_size="{&quot;x&quot;:10,&quot;y&quot;:396,&quot;w&quot;:787,&quot;h&quot;:74,&quot;abs_x&quot;:80,&quot;abs_y&quot;:596}">
+                <thead bis_size="{&quot;x&quot;:10,&quot;y&quot;:396,&quot;w&quot;:787,&quot;h&quot;:22,&quot;abs_x&quot;:80,&quot;abs_y&quot;:596}">
+                    <tr bis_size="{&quot;x&quot;:10,&quot;y&quot;:396,&quot;w&quot;:787,&quot;h&quot;:22,&quot;abs_x&quot;:80,&quot;abs_y&quot;:596}">
+                        <td bis_size="{&quot;x&quot;:10,&quot;y&quot;:396,&quot;w&quot;:393,&quot;h&quot;:22,&quot;abs_x&quot;:80,&quot;abs_y&quot;:596}">Input Sample</td>
+                        <td bis_size="{&quot;x&quot;:403,&quot;y&quot;:396,&quot;w&quot;:393,&quot;h&quot;:22,&quot;abs_x&quot;:473,&quot;abs_y&quot;:596}">Output Sample</td>
+                    </tr>
+                </thead>
+                <tbody bis_size="{&quot;x&quot;:10,&quot;y&quot;:419,&quot;w&quot;:787,&quot;h&quot;:50,&quot;abs_x&quot;:80,&quot;abs_y&quot;:619}">
+                    <tr bis_size="{&quot;x&quot;:10,&quot;y&quot;:419,&quot;w&quot;:787,&quot;h&quot;:50,&quot;abs_x&quot;:80,&quot;abs_y&quot;:619}">
+                        <td class="division" bis_size="{&quot;x&quot;:10,&quot;y&quot;:419,&quot;w&quot;:393,&quot;h&quot;:50,&quot;abs_x&quot;:80,&quot;abs_y&quot;:619}">
+                            <p bis_size="{&quot;x&quot;:15,&quot;y&quot;:425,&quot;w&quot;:383,&quot;h&quot;:40,&quot;abs_x&quot;:85,&quot;abs_y&quot;:625}">
+                                1.0 7.0<br bis_size="{&quot;x&quot;:73,&quot;y&quot;:426,&quot;w&quot;:0,&quot;h&quot;:16,&quot;abs_x&quot;:143,&quot;abs_y&quot;:626}">
+                                5.0 9.0
+                            </p>
+                        </td>
+                        <td bis_size="{&quot;x&quot;:403,&quot;y&quot;:419,&quot;w&quot;:393,&quot;h&quot;:50,&quot;abs_x&quot;:473,&quot;abs_y&quot;:619}">
+                            <p bis_size="{&quot;x&quot;:409,&quot;y&quot;:425,&quot;w&quot;:383,&quot;h&quot;:20,&quot;abs_x&quot;:479,&quot;abs_y&quot;:625}">4.4721</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table bis_size="{&quot;x&quot;:10,&quot;y&quot;:485,&quot;w&quot;:787,&quot;h&quot;:51,&quot;abs_x&quot;:80,&quot;abs_y&quot;:685}">
+                <tbody bis_size="{&quot;x&quot;:10,&quot;y&quot;:486,&quot;w&quot;:787,&quot;h&quot;:50,&quot;abs_x&quot;:80,&quot;abs_y&quot;:686}">
+                    <tr bis_size="{&quot;x&quot;:10,&quot;y&quot;:486,&quot;w&quot;:787,&quot;h&quot;:50,&quot;abs_x&quot;:80,&quot;abs_y&quot;:686}">
+                        <td class="division" bis_size="{&quot;x&quot;:10,&quot;y&quot;:486,&quot;w&quot;:393,&quot;h&quot;:50,&quot;abs_x&quot;:80,&quot;abs_y&quot;:686}">
+                            <p bis_size="{&quot;x&quot;:15,&quot;y&quot;:491,&quot;w&quot;:383,&quot;h&quot;:40,&quot;abs_x&quot;:85,&quot;abs_y&quot;:691}">
+                                -2.5 0.4<br bis_size="{&quot;x&quot;:82,&quot;y&quot;:493,&quot;w&quot;:0,&quot;h&quot;:16,&quot;abs_x&quot;:152,&quot;abs_y&quot;:693}">
+                                12.1 7.3
+                            </p>
+                        </td>
+                        <td bis_size="{&quot;x&quot;:403,&quot;y&quot;:486,&quot;w&quot;:393,&quot;h&quot;:50,&quot;abs_x&quot;:473,&quot;abs_y&quot;:686}">
+                            <p bis_size="{&quot;x&quot;:409,&quot;y&quot;:491,&quot;w&quot;:383,&quot;h&quot;:20,&quot;abs_x&quot;:479,&quot;abs_y&quot;:691}">16.1484</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table bis_size="{&quot;x&quot;:10,&quot;y&quot;:552,&quot;w&quot;:787,&quot;h&quot;:51,&quot;abs_x&quot;:80,&quot;abs_y&quot;:752}">
+                <tbody bis_size="{&quot;x&quot;:10,&quot;y&quot;:552,&quot;w&quot;:787,&quot;h&quot;:50,&quot;abs_x&quot;:80,&quot;abs_y&quot;:752}">
+                    <tr bis_size="{&quot;x&quot;:10,&quot;y&quot;:552,&quot;w&quot;:787,&quot;h&quot;:50,&quot;abs_x&quot;:80,&quot;abs_y&quot;:752}">
+                        <td class="division" bis_size="{&quot;x&quot;:10,&quot;y&quot;:552,&quot;w&quot;:393,&quot;h&quot;:50,&quot;abs_x&quot;:80,&quot;abs_y&quot;:752}">
+                            <p bis_size="{&quot;x&quot;:15,&quot;y&quot;:558,&quot;w&quot;:383,&quot;h&quot;:40,&quot;abs_x&quot;:85,&quot;abs_y&quot;:758}">
+                                2.5 -0.4<br bis_size="{&quot;x&quot;:82,&quot;y&quot;:559,&quot;w&quot;:0,&quot;h&quot;:16,&quot;abs_x&quot;:152,&quot;abs_y&quot;:759}">
+                                -12.2 7.0
+                            </p>
+                        </td>
+                        <td bis_size="{&quot;x&quot;:403,&quot;y&quot;:552,&quot;w&quot;:393,&quot;h&quot;:50,&quot;abs_x&quot;:473,&quot;abs_y&quot;:752}">
+                            <p bis_size="{&quot;x&quot;:409,&quot;y&quot;:558,&quot;w&quot;:383,&quot;h&quot;:20,&quot;abs_x&quot;:479,&quot;abs_y&quot;:758}">16.4575</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    <script defer="" src="./vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon="{&quot;rayId&quot;:&quot;96e56c2d8fc04098&quot;,&quot;serverTiming&quot;:{&quot;name&quot;:{&quot;cfExtPri&quot;:true,&quot;cfEdge&quot;:true,&quot;cfOrigin&quot;:true,&quot;cfL4&quot;:true,&quot;cfSpeedBrain&quot;:true,&quot;cfCacheStatus&quot;:true}},&quot;version&quot;:&quot;2025.7.0&quot;,&quot;token&quot;:&quot;516fcb7d46dd40c2885e380045eb7123&quot;}" crossorigin="anonymous"></script>
+
+
+<script type="text/javascript" id="" charset="">(function(a,e,b,f,g,c,d){a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)};c=e.createElement(f);c.async=1;c.src="https://www.clarity.ms/tag/"+g+"?ref\x3dgtm2";d=e.getElementsByTagName(f)[0];d.parentNode.insertBefore(c,d)})(window,document,"clarity","script","glwcltowmx");</script><script src="./widget_app_1753708687017.js.download" async="" id="a11yWidgetSrc" crossorigin="anonymous" integrity="sha256-f4djsSAIJLo/pzEb0dZMwKklKMklDUxRn/GhtY3um4E="></script><script crossorigin="anonymous" integrity="sha256-dM40HEKcBBaChjUh1a+Ctr6F1Cyyh0ubTfPqPmE6gco=" src="./remediation_1753708687017.js.download"></script></body></html>
