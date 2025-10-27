@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<!-- saved from url=(0058)https://resources.beecrowd.com/repository/UOJ_1017_en.html -->
+<html><script async="" src="./gtm.js.download"></script><script async="" src="./saved_resource(1)"></script><script src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/libs/extend-native-history-api.js"></script><script src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/libs/requests.js"></script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script>(function(w,i,g){w[g]=w[g]||[];if(typeof w[g].push=='function')w[g].push(i)})
+(window,'GTM-5TJ9S2X','google_tags_first_party');</script><script>(function(w,d,s,l){w[l]=w[l]||[];(function(){w[l].push(arguments);})('set', 'developer_id.dY2E1Nz', true);
+		var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s);j.async=true;j.src='/4qul/';
+		f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer');</script>
+        <title>bee 1017 - Fuel Spent</title>
+        
+        <meta content="beecrowd" name="author">
+        <meta content="beecrowd - Problem 1017 - Fuel Spent" name="description">
+
+        <link href="./css" rel="stylesheet" type="text/css">
+        <link href="./default(1).css" rel="stylesheet" type="text/css">
+
+        <script>
+            window.onload = function () {
+                window.parent.postMessage(
+                    {
+                        action: "resize",
+                        id: "description-html",
+                        height: document.body.scrollHeight + 10,
+                    },
+                    "*",
+                );
+            };
+        </script>
+
+        <!-- Google Tag Manager -->
+        <script>
+            (function (w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != "dataLayer" ? "&l=" + l : "";
+                j.async = true;
+                j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+                f.parentNode.insertBefore(j, f);
+            })(window, document, "script", "dataLayer", "GTM-5TJ9S2X");
+        </script>
+        <!-- End Google Tag Manager -->
+    <script bis_use="true" type="text/javascript" charset="utf-8" data-bis-config="[&quot;facebook.com/&quot;,&quot;twitter.com/&quot;,&quot;youtube-nocookie.com/embed/&quot;,&quot;//vk.com/&quot;,&quot;//www.vk.com/&quot;,&quot;linkedin.com/&quot;,&quot;//www.linkedin.com/&quot;,&quot;//instagram.com/&quot;,&quot;//www.instagram.com/&quot;,&quot;//www.google.com/recaptcha/api2/&quot;,&quot;//hangouts.google.com/webchat/&quot;,&quot;//www.google.com/calendar/&quot;,&quot;//www.google.com/maps/embed&quot;,&quot;spotify.com/&quot;,&quot;soundcloud.com/&quot;,&quot;//player.vimeo.com/&quot;,&quot;//disqus.com/&quot;,&quot;//tgwidget.com/&quot;,&quot;//js.driftt.com/&quot;,&quot;friends2follow.com&quot;,&quot;/widget&quot;,&quot;login&quot;,&quot;//video.bigmir.net/&quot;,&quot;blogger.com&quot;,&quot;//smartlock.google.com/&quot;,&quot;//keep.google.com/&quot;,&quot;/web.tolstoycomments.com/&quot;,&quot;moz-extension://&quot;,&quot;chrome-extension://&quot;,&quot;/auth/&quot;,&quot;//analytics.google.com/&quot;,&quot;adclarity.com&quot;,&quot;paddle.com/checkout&quot;,&quot;hcaptcha.com&quot;,&quot;recaptcha.net&quot;,&quot;2captcha.com&quot;,&quot;accounts.google.com&quot;,&quot;www.google.com/shopping/customerreviews&quot;,&quot;buy.tinypass.com&quot;,&quot;gstatic.com&quot;,&quot;secureir.ebaystatic.com&quot;,&quot;docs.google.com&quot;,&quot;contacts.google.com&quot;,&quot;github.com&quot;,&quot;mail.google.com&quot;,&quot;chat.google.com&quot;,&quot;audio.xpleer.com&quot;,&quot;keepa.com&quot;,&quot;static.xx.fbcdn.net&quot;,&quot;sas.selleramp.com&quot;,&quot;1plus1.video&quot;,&quot;console.googletagservices.com&quot;,&quot;//lnkd.demdex.net/&quot;,&quot;//radar.cedexis.com/&quot;,&quot;//li.protechts.net/&quot;,&quot;challenges.cloudflare.com/&quot;,&quot;ogs.google.com&quot;]" src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/executors/traffic.js"></script></head>
+    <body __processed_33f9005f-dbb5-4286-8f6a-a67f9898a6df__="true" bis_status="ok" bis_frame_id="93" bis_body_id="fr_9bsuet5qhsgokklvk17dud" bis_depth="0" bis_chainid="1" bis_size="{&quot;x&quot;:0,&quot;y&quot;:0,&quot;w&quot;:807,&quot;h&quot;:630,&quot;abs_x&quot;:70,&quot;abs_y&quot;:200}">
+        <div class="header" bis_size="{&quot;x&quot;:10,&quot;y&quot;:10,&quot;w&quot;:787,&quot;h&quot;:112,&quot;abs_x&quot;:80,&quot;abs_y&quot;:210}">
+            <span bis_size="{&quot;x&quot;:358,&quot;y&quot;:11,&quot;w&quot;:89,&quot;h&quot;:13,&quot;abs_x&quot;:428,&quot;abs_y&quot;:211}">beecrowd | 1017</span>
+            <h1 bis_size="{&quot;x&quot;:10,&quot;y&quot;:30,&quot;w&quot;:787,&quot;h&quot;:32,&quot;abs_x&quot;:80,&quot;abs_y&quot;:230}">Fuel Spent</h1>
+            <div bis_size="{&quot;x&quot;:10,&quot;y&quot;:68,&quot;w&quot;:787,&quot;h&quot;:13,&quot;abs_x&quot;:80,&quot;abs_y&quot;:268}">
+                <p bis_size="{&quot;x&quot;:10,&quot;y&quot;:68,&quot;w&quot;:787,&quot;h&quot;:13,&quot;abs_x&quot;:80,&quot;abs_y&quot;:268}">Adapted by Neilor Tonin, URI <img alt="" src="./br.gif" style="width: 16px; height: 11px" bis_size="{&quot;x&quot;:458,&quot;y&quot;:68,&quot;w&quot;:16,&quot;h&quot;:11,&quot;abs_x&quot;:528,&quot;abs_y&quot;:268}"> Brazil</p>
+            </div>
+            <strong bis_size="{&quot;x&quot;:364,&quot;y&quot;:86,&quot;w&quot;:78,&quot;h&quot;:15,&quot;abs_x&quot;:434,&quot;abs_y&quot;:286}">Timelimit: 1</strong>
+        </div>
+
+        <div class="problem" bis_size="{&quot;x&quot;:10,&quot;y&quot;:142,&quot;w&quot;:787,&quot;h&quot;:462,&quot;abs_x&quot;:80,&quot;abs_y&quot;:342}">
+            <div class="description" bis_size="{&quot;x&quot;:10,&quot;y&quot;:142,&quot;w&quot;:787,&quot;h&quot;:80,&quot;abs_x&quot;:80,&quot;abs_y&quot;:342}">
+                <p bis_size="{&quot;x&quot;:10,&quot;y&quot;:142,&quot;w&quot;:787,&quot;h&quot;:80,&quot;abs_x&quot;:80,&quot;abs_y&quot;:342}">Little John wants to calculate and show the amount of spent fuel liters on a trip, using a car that does 12 Km/L. For this, he would like you to help him through a simple program. To perform the calculation, you have to read spent time (in hours) and the same average speed (km/h). In this way, you can get distance and then, calculate how many liters would be needed. Show the value with three decimal places after the point.</p>
+            </div>
+
+            <h2 bis_size="{&quot;x&quot;:10,&quot;y&quot;:242,&quot;w&quot;:787,&quot;h&quot;:20,&quot;abs_x&quot;:80,&quot;abs_y&quot;:442}">Input</h2>
+
+            <div class="input" bis_size="{&quot;x&quot;:10,&quot;y&quot;:272,&quot;w&quot;:787,&quot;h&quot;:40,&quot;abs_x&quot;:80,&quot;abs_y&quot;:472}">
+                <p bis_size="{&quot;x&quot;:10,&quot;y&quot;:272,&quot;w&quot;:787,&quot;h&quot;:40,&quot;abs_x&quot;:80,&quot;abs_y&quot;:472}">The input file contains two integers. The first one is the spent time in the trip (in hours). The second one is the average speed during the trip (in Km/h).</p>
+            </div>
+
+            <h2 bis_size="{&quot;x&quot;:10,&quot;y&quot;:332,&quot;w&quot;:787,&quot;h&quot;:20,&quot;abs_x&quot;:80,&quot;abs_y&quot;:532}">Output</h2>
+
+            <div class="output" bis_size="{&quot;x&quot;:10,&quot;y&quot;:362,&quot;w&quot;:787,&quot;h&quot;:20,&quot;abs_x&quot;:80,&quot;abs_y&quot;:562}">
+                <p bis_size="{&quot;x&quot;:10,&quot;y&quot;:362,&quot;w&quot;:787,&quot;h&quot;:20,&quot;abs_x&quot;:80,&quot;abs_y&quot;:562}">Print how many liters would be needed to do this trip, with three digits after the decimal point.</p>
+            </div>
+
+            <div class="both" bis_size="{&quot;x&quot;:10,&quot;y&quot;:392,&quot;w&quot;:787,&quot;h&quot;:0,&quot;abs_x&quot;:80,&quot;abs_y&quot;:592}"></div>
+
+            <table bis_size="{&quot;x&quot;:10,&quot;y&quot;:397,&quot;w&quot;:787,&quot;h&quot;:74,&quot;abs_x&quot;:80,&quot;abs_y&quot;:597}">
+                <thead bis_size="{&quot;x&quot;:10,&quot;y&quot;:398,&quot;w&quot;:787,&quot;h&quot;:22,&quot;abs_x&quot;:80,&quot;abs_y&quot;:598}">
+                    <tr bis_size="{&quot;x&quot;:10,&quot;y&quot;:398,&quot;w&quot;:787,&quot;h&quot;:22,&quot;abs_x&quot;:80,&quot;abs_y&quot;:598}">
+                        <td bis_size="{&quot;x&quot;:10,&quot;y&quot;:398,&quot;w&quot;:393,&quot;h&quot;:22,&quot;abs_x&quot;:80,&quot;abs_y&quot;:598}">Input Sample</td>
+                        <td bis_size="{&quot;x&quot;:403,&quot;y&quot;:398,&quot;w&quot;:393,&quot;h&quot;:22,&quot;abs_x&quot;:473,&quot;abs_y&quot;:598}">Output Sample</td>
+                    </tr>
+                </thead>
+                <tbody bis_size="{&quot;x&quot;:10,&quot;y&quot;:420,&quot;w&quot;:787,&quot;h&quot;:50,&quot;abs_x&quot;:80,&quot;abs_y&quot;:620}">
+                    <tr bis_size="{&quot;x&quot;:10,&quot;y&quot;:420,&quot;w&quot;:787,&quot;h&quot;:50,&quot;abs_x&quot;:80,&quot;abs_y&quot;:620}">
+                        <td class="division" bis_size="{&quot;x&quot;:10,&quot;y&quot;:420,&quot;w&quot;:393,&quot;h&quot;:50,&quot;abs_x&quot;:80,&quot;abs_y&quot;:620}">
+                            <p bis_size="{&quot;x&quot;:15,&quot;y&quot;:426,&quot;w&quot;:383,&quot;h&quot;:40,&quot;abs_x&quot;:85,&quot;abs_y&quot;:626}">
+                                10<br bis_size="{&quot;x&quot;:31,&quot;y&quot;:427,&quot;w&quot;:0,&quot;h&quot;:16,&quot;abs_x&quot;:101,&quot;abs_y&quot;:627}">
+                                85
+                            </p>
+                        </td>
+                        <td bis_size="{&quot;x&quot;:403,&quot;y&quot;:420,&quot;w&quot;:393,&quot;h&quot;:50,&quot;abs_x&quot;:473,&quot;abs_y&quot;:620}">
+                            <p bis_size="{&quot;x&quot;:409,&quot;y&quot;:426,&quot;w&quot;:383,&quot;h&quot;:20,&quot;abs_x&quot;:479,&quot;abs_y&quot;:626}">70.833</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table bis_size="{&quot;x&quot;:10,&quot;y&quot;:487,&quot;w&quot;:787,&quot;h&quot;:51,&quot;abs_x&quot;:80,&quot;abs_y&quot;:687}">
+                <tbody bis_size="{&quot;x&quot;:10,&quot;y&quot;:487,&quot;w&quot;:787,&quot;h&quot;:50,&quot;abs_x&quot;:80,&quot;abs_y&quot;:687}">
+                    <tr bis_size="{&quot;x&quot;:10,&quot;y&quot;:487,&quot;w&quot;:787,&quot;h&quot;:50,&quot;abs_x&quot;:80,&quot;abs_y&quot;:687}">
+                        <td class="division" bis_size="{&quot;x&quot;:10,&quot;y&quot;:487,&quot;w&quot;:393,&quot;h&quot;:50,&quot;abs_x&quot;:80,&quot;abs_y&quot;:687}">
+                            <p bis_size="{&quot;x&quot;:15,&quot;y&quot;:492,&quot;w&quot;:383,&quot;h&quot;:40,&quot;abs_x&quot;:85,&quot;abs_y&quot;:692}">
+                                2<br bis_size="{&quot;x&quot;:23,&quot;y&quot;:494,&quot;w&quot;:0,&quot;h&quot;:16,&quot;abs_x&quot;:93,&quot;abs_y&quot;:694}">
+                                92
+                            </p>
+                        </td>
+                        <td bis_size="{&quot;x&quot;:403,&quot;y&quot;:487,&quot;w&quot;:393,&quot;h&quot;:50,&quot;abs_x&quot;:473,&quot;abs_y&quot;:687}">
+                            <p bis_size="{&quot;x&quot;:409,&quot;y&quot;:492,&quot;w&quot;:383,&quot;h&quot;:20,&quot;abs_x&quot;:479,&quot;abs_y&quot;:692}">15.333</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table bis_size="{&quot;x&quot;:10,&quot;y&quot;:553,&quot;w&quot;:787,&quot;h&quot;:51,&quot;abs_x&quot;:80,&quot;abs_y&quot;:753}">
+                <tbody bis_size="{&quot;x&quot;:10,&quot;y&quot;:554,&quot;w&quot;:787,&quot;h&quot;:50,&quot;abs_x&quot;:80,&quot;abs_y&quot;:754}">
+                    <tr bis_size="{&quot;x&quot;:10,&quot;y&quot;:554,&quot;w&quot;:787,&quot;h&quot;:50,&quot;abs_x&quot;:80,&quot;abs_y&quot;:754}">
+                        <td class="division" bis_size="{&quot;x&quot;:10,&quot;y&quot;:554,&quot;w&quot;:393,&quot;h&quot;:50,&quot;abs_x&quot;:80,&quot;abs_y&quot;:754}">
+                            <p bis_size="{&quot;x&quot;:15,&quot;y&quot;:559,&quot;w&quot;:383,&quot;h&quot;:40,&quot;abs_x&quot;:85,&quot;abs_y&quot;:759}">
+                                22<br bis_size="{&quot;x&quot;:31,&quot;y&quot;:561,&quot;w&quot;:0,&quot;h&quot;:16,&quot;abs_x&quot;:101,&quot;abs_y&quot;:761}">
+                                67
+                            </p>
+                        </td>
+                        <td bis_size="{&quot;x&quot;:403,&quot;y&quot;:554,&quot;w&quot;:393,&quot;h&quot;:50,&quot;abs_x&quot;:473,&quot;abs_y&quot;:754}">
+                            <p bis_size="{&quot;x&quot;:409,&quot;y&quot;:559,&quot;w&quot;:383,&quot;h&quot;:20,&quot;abs_x&quot;:479,&quot;abs_y&quot;:759}">122.833</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    <script defer="" src="./vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon="{&quot;rayId&quot;:&quot;96e5833be8d54098&quot;,&quot;serverTiming&quot;:{&quot;name&quot;:{&quot;cfExtPri&quot;:true,&quot;cfEdge&quot;:true,&quot;cfOrigin&quot;:true,&quot;cfL4&quot;:true,&quot;cfSpeedBrain&quot;:true,&quot;cfCacheStatus&quot;:true}},&quot;version&quot;:&quot;2025.7.0&quot;,&quot;token&quot;:&quot;516fcb7d46dd40c2885e380045eb7123&quot;}" crossorigin="anonymous"></script>
+
+
+</body></html>
